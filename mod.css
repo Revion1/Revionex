@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+	background-color:#FFECDB;
+	position: relative;
+	width:1000px;
+}
+img{
+	height:100px;
+	width:100px;
+}
+h1{
+	color:white;
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-size:150px;
+	position: relative;
+    top: -240px;
+    left: 500px;
+	
+}
+h1:hover{
+	color:#AFDDFF;
+}
+iframe{
+	position: relative;
+    top: -300px;
+    left: 280px;
+}
+p {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 100px;
+  position: relative;
+  left: 400px;
+  bottom: 300px;
+  opacity: 0; /* مخفي فالأول */
+  transform: translateX(300px); /* محركو لليمين */
+  transition: all 1s ease;
+}
+
+p.show {
+  opacity: 1;
+  transform: translateX(0); /* يرجع بلاصتو */
+}
+a img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.5s ease; /* تكبير سلس */
+  position:relative;
+  bottom:100px;
+  left:550px;
+}
+a:hover img{
+    animation-name:tt;
+	animation-duration: 0.5s; 
+    animation-fill-mode: forwards;
+}
+h2{
+	color:white;
+	font-family: "Bebas Neue", sans-serif;
+	font-style: normal;
+	font-size:150px;
+	position: relative;
+    left:500px;
+	bottom:800px;
+}
+h2:hover{
+	color:#AFDDFF;
+}
+
+@keyframes tt {
+  0% {
+    width: 300px;
+    height: 300px;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+  }
+}
+
