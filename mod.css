@@ -1,81 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body{
-	background-color:#FFECDB;
-	position: relative;
-	width:1000px;
+	background: linear-gradient(to right, rgb(33, 147, 176), rgb(109, 213, 237));
+	max-width:955px;
+	max-height:500px;
 }
-img{
-	height:100px;
-	width:100px;
+nav {
+    background-color: white;
+    height: 60px;
+	border-radius:30px;
+	position:relative;
+	left:200px
 }
-h1{
-	color:white;
-	font-family: "Bebas Neue", sans-serif;
-	font-style: normal;
-	font-size:150px;
-	position: relative;
-    top: -240px;
-    left: 500px;
-	
+.logo {
+	height:50px;
+	position:relative;
+	left:20px;
+	top:5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.ab{
+	position:relative;
+	font-family: "Boldonse", system-ui;
+	bottom:70px;
+	left:90px;
+	color:#AFDDFF;
+}
+.pr{
+	position:relative;
+	font-family: "Boldonse", system-ui;
+	bottom:133px;
+	left:200px;
+	color:#AFDDFF;
+}
+.co{
+	position:relative;
+	font-family: "Boldonse", system-ui;
+	bottom:195px;
+	left:350px;
+	color:#AFDDFF;
 }
 h1:hover{
-	color:#AFDDFF;
+	color:#60B5FF;
 }
-iframe{
-	position: relative;
-    top: -300px;
-    left: 280px;
+a{
+	text-decoration:none;
 }
-p {
-  color: white;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 100px;
-  position: relative;
-  left: 400px;
-  bottom: 300px;
-  opacity: 0; /* مخفي فالأول */
-  transform: translateX(300px); /* محركو لليمين */
-  transition: all 1s ease;
-}
-
-p.show {
-  opacity: 1;
-  transform: translateX(0); /* يرجع بلاصتو */
-}
-a img {
-  width: 300px;
-  height: 300px;
-  transition: all 0.5s ease; /* تكبير سلس */
-  position:relative;
-  bottom:100px;
-  left:550px;
-}
-a:hover img{
-    animation-name:tt;
-	animation-duration: 0.5s; 
-    animation-fill-mode: forwards;
-}
-h2{
-	color:white;
-	font-family: "Bebas Neue", sans-serif;
-	font-style: normal;
+.w{
+	font-family:"Boldonse" , system-ui;
 	font-size:150px;
-	position: relative;
-    left:500px;
-	bottom:800px;
+	position:relative;
+	left:100px;
+	color:white;
 }
-h2:hover{
-	color:#AFDDFF;
+.p{
+	position:relative;
+	right:500px;
+	bottom:200px;
+}
+.me{
+	font-family: "Bebas Neue", sans-serif;
+	color:white;
+	font-size:80px;
+	position:relative;
+	bottom:900px;
+	left:500px;
+	animation-name:left;
+	animation-duration:3s;
+}
+.re{
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:500px;
+	color:white;
+    bottom:1000px;	
+}
+.m{
+    width: 100%;
+    height: 100%;
+	position:relative;
+	bottom:1000px;
+	left:500px;
+	opacity:50%;
+
+}
+.e{
+	font-family: "Bebas Neue", sans-serif;
+	font-size:100px;
+	position:relative;
+	bottom:2200px;
+	color:white;
+	animation-name:right;
+	animation-duration:3s;
+}
+h3{
+	font-family: "Bebas Neue", sans-serif;
+	font-size:100px;
+	color:white;
+	position:relative;
+	left:500px;
+	bottom:600px;
+}
+.y{
+	position:relative;
+	width:400px;
+	height:400px;
+	bottom:600px;
+	left:100px;
+	
+}
+.i{
+	width:400px;
+	height:400px;
+	position:relative;
+	bottom:600px;
+	left:100px;
+}
+.l{
+	width:400px;
+	height:400px;
+	position:relative;
+	bottom:1000px;
+	left:900px;
+}
+.y:hover{
+	animation-name:scale;
+	animation-duration:3s;
+}
+.i:hover{
+	animation-name:scale;
+	animation-duration:3s;
+}
+.l:hover{
+	animation-name:scale;
+	animation-duration:3s;
+}
+.o{
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:400px;
+	color:white;
+	bottom:-250px;
+}
+.j{
+	position:relative;
+	bottom:2000px;
+}
+.N{
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:50px;
+	color:white;
+	bottom:-150px;
+}
+.B{
+	width:1500px;
+	height:500px;
+	position:relative;
+	top:50px;
+	opacity:70%;
+}
+.v{	
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:300px;
+	color:white;
+	top:-500px;
+	display:none;
+}
+.H{
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:50px;
+	color:white;
+	bottom:-150px;
+}
+.B:hover + .v {
+    display: inline-block; /* أو inline-block حسب الحاجة */
 }
 
-@keyframes tt {
-  0% {
-    width: 300px;
-    height: 300px;
-  }
-  100% {
-    width: 400px;
-    height: 400px;
-  }
+.P{
+	width:1500px;
+	height:500px;
+	position:relative;
+	top:50px;
+	opacity:70%;
 }
+.V{	
+	font-family:"Boldonse" , system-ui;
+	font-size:150px;
+	position:relative;
+	left:300px;
+	color:white;
+	top:-500px;
+	display:none;
+}
+.P:hover + .V {
+    display: block; /* أو inline-block حسب الحاجة */
+}
+.contact{
+	position:relative;
+	bottom:2000px;
+	height:500px.
+}
+@keyframes left{ 	
+	0%{ left:7000px; } 
+	50%{ } 
+	100%{ left:400px; 
+	}
 
+
+
+
+
+
+
+}
+@keyframes right{ 	
+	0%{ right:7000px; 
+	
+	} 
+	50%{ } 
+	100%{ right:500px; 
+	}
+
+
+
+
+
+
+
+}
+@keyframes scale{
+	0%{
+		height:400px;
+		width:400px;
+	}
+	
+	100%{
+		height:450px;
+		width:450px;		
+	}
+}
